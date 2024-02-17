@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Billett Bestilling</title>
+    <script src="kinobiletter.js"></script>
+    <script type="application/javascript">
+        </head>
+
+        <body>
+        <h1><b>Bestilling av kinobilletter</b></h1>
+
+        <form>
+            <label>Velg film</label>
+            <select id="film">
+                <option value = "Velg film">Velg film her</option>
+                <option value = "Fear and Loathing in Las Vegas">Fear and Loathing in Las Vegas </option>
+                <option value = "The Lighthouse">The Lighthouse</option>
+                <option value = "Pulp Fiction">Pulp Fiction</option>
+            </select>
+            <span id="filmError" style="color: rgb(167, 16, 16);"></span>
+
+        </form> <br>
+
+            <table><tr><td>Antall</td><td><input type="number" id="billettAntall" style="width: 30px;"/></td></tr>
+                <span id="billettAntallError" style="color: rgb(167, 16, 16);"></span>
+            </table>
+
+            <table>
+                <tr><td>Fornavn</td><td><input type="text" id="fornavn"/>
+                    <span id="fornavnError" style="color: rgb(167, 16, 16);"></span></td></tr>
+                <tr><td>Etternavn</td><td><input type="text" id="etternavn"/>
+                    <span id="etternavnError" style="color: rgb(167, 16, 16);"></span></td></tr>
+                <tr><td>Epost</td><td><input type="text" id="epost"/>
+                    <span id="epostError" style="color: rgb(167, 16, 16);"></span></td></tr>
+                <tr><td>Telefonnr</td><td><input type="text" id="telefonnr"/>
+                    <span id="telefonnrError" style="color: rgb(167, 16, 16);"></span></td></tr>
+                <tr><td><button onclick="registrerBillett()">Kjøp billett</button></td></tr>
+            </table>
+
+            <h2><b>Alle billetter</b></h2>
+            <div id="BillettRegister"></div>
+
+            <button onclick="slettBilletter()">Slett alle Billettene</button>
+
+        </body>
+        </html>
